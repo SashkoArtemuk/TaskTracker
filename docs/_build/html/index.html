@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker’s documentation! &#8212; Task Tracker  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="task-tracker-s-documentation">
+<h1>Task Tracker’s documentation!<a class="headerlink" href="#task-tracker-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="models">
+<h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-Models.Board">
+<span id="board"></span><h2>Board<a class="headerlink" href="#module-Models.Board" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="Models.Board.Board">
+<em class="property">class </em><code class="sig-prename descclassname">Models.Board.</code><code class="sig-name descname">Board</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'Board'</span></em>, <em class="sig-param"><span class="n">date_creation</span><span class="o">=</span><span class="default_value">datetime.datetime(2020, 11, 1, 16, 27, 55, 348610)</span></em>, <em class="sig-param"><span class="n">date_edition</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Models.Board.Board" title="Permalink to this definition">¶</a></dt>
+<dd><p>Board Object class.</p>
+<p>Creates board model.</p>
+<dl class="py method">
+<dt id="Models.Board.Board.date_creation">
+<em class="property">property </em><code class="sig-name descname">date_creation</code><a class="headerlink" href="#Models.Board.Board.date_creation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Date creation getter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Board.Board.date_edition">
+<em class="property">property </em><code class="sig-name descname">date_edition</code><a class="headerlink" href="#Models.Board.Board.date_edition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Date edition getter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Board.Board.db">
+<code class="sig-name descname">db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Models.Board.Board.db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes db arguments from object
+:return: List with board info</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Board.Board.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Models.Board.Board.json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes json from object
+:return: Board info in json format</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Board.Board.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#Models.Board.Board.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name getter.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Models.Task">
+<span id="task"></span><h2>Task<a class="headerlink" href="#module-Models.Task" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="Models.Task.Task">
+<em class="property">class </em><code class="sig-prename descclassname">Models.Task.</code><code class="sig-name descname">Task</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'Task'</span></em>, <em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">'Task description'</span></em>, <em class="sig-param"><span class="n">completed</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">date_creation</span><span class="o">=</span><span class="default_value">datetime.datetime(2020, 11, 1, 16, 27, 56, 135655)</span></em>, <em class="sig-param"><span class="n">date_edition</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Models.Task.Task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Task Object class.</p>
+<p>Creates task model.</p>
+<dl class="py method">
+<dt id="Models.Task.Task.completed">
+<em class="property">property </em><code class="sig-name descname">completed</code><a class="headerlink" href="#Models.Task.Task.completed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Completion getter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Task.Task.date_creation">
+<em class="property">property </em><code class="sig-name descname">date_creation</code><a class="headerlink" href="#Models.Task.Task.date_creation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Date creation getter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Task.Task.date_edition">
+<em class="property">property </em><code class="sig-name descname">date_edition</code><a class="headerlink" href="#Models.Task.Task.date_edition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Date edition getter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Task.Task.db">
+<code class="sig-name descname">db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Models.Task.Task.db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes db arguments from object
+:return: List with task info</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Task.Task.description">
+<em class="property">property </em><code class="sig-name descname">description</code><a class="headerlink" href="#Models.Task.Task.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Description getter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Task.Task.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Models.Task.Task.json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes json from object
+:return: Task info in json format</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Models.Task.Task.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#Models.Task.Task.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name getter.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="controllers">
+<h1>Controllers<a class="headerlink" href="#controllers" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-Controllers.BoardController">
+<span id="boardcontroller"></span><h2>BoardController<a class="headerlink" href="#module-Controllers.BoardController" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="Controllers.BoardController.BoardController">
+<em class="property">class </em><code class="sig-prename descclassname">Controllers.BoardController.</code><code class="sig-name descname">BoardController</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">api</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.BoardController.BoardController" title="Permalink to this definition">¶</a></dt>
+<dd><p>Board Controller class.</p>
+<p>Defines api for boards.</p>
+<dl class="py class">
+<dt id="Controllers.BoardController.BoardController.AddBoard">
+<em class="property">class </em><code class="sig-name descname">AddBoard</code><a class="headerlink" href="#Controllers.BoardController.BoardController.AddBoard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.BoardController.BoardController.AddBoard.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.BoardController.BoardController.AddBoard.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds new board</p>
+<p>Handles ‘put’ requests on route /board/add with parameter ‘name’ in data</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>put(‘<a class="reference external" href="http://localhost:5000/board/add">http://localhost:5000/board/add</a>’, data={‘name’: ‘Brand new board’})</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Id of created board.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.BoardController.BoardController.DeleteBoard">
+<em class="property">class </em><code class="sig-name descname">DeleteBoard</code><a class="headerlink" href="#Controllers.BoardController.BoardController.DeleteBoard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.BoardController.BoardController.DeleteBoard.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.BoardController.BoardController.DeleteBoard.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes board(by id)</p>
+<p>Handles ‘put’ requests on route board/delete/ with parameter ‘name’ in data</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>put(‘<a class="reference external" href="http://localhost:5000/board/delete/1">http://localhost:5000/board/delete/1</a>’)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Board id.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Success(even if board doesn’t exist)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.BoardController.BoardController.EditBoardName">
+<em class="property">class </em><code class="sig-name descname">EditBoardName</code><a class="headerlink" href="#Controllers.BoardController.BoardController.EditBoardName" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.BoardController.BoardController.EditBoardName.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.BoardController.BoardController.EditBoardName.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change specific board’s name(by id)</p>
+<p>Handles ‘put’ requests on route /board/edit/&lt;id&gt; with parameter ‘name’ in data</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>put(‘<a class="reference external" href="http://localhost:5000/board/edit/1">http://localhost:5000/board/edit/1</a>’, data={‘name’: ‘New name’})</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Board id.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Success(even if board doesn’t exist).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.BoardController.BoardController.GetBoard">
+<em class="property">class </em><code class="sig-name descname">GetBoard</code><a class="headerlink" href="#Controllers.BoardController.BoardController.GetBoard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.BoardController.BoardController.GetBoard.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.BoardController.BoardController.GetBoard.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get specific board(by id)</p>
+<p>Handles ‘get’ requests on board /board/get/&lt;id&gt;</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>get(‘<a class="reference external" href="http://localhost:5000/board/get/5">http://localhost:5000/board/get/5</a>’)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Board id.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Json response with board (id: board) or error response if id is wrong</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.BoardController.BoardController.GetBoards">
+<em class="property">class </em><code class="sig-name descname">GetBoards</code><a class="headerlink" href="#Controllers.BoardController.BoardController.GetBoards" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.BoardController.BoardController.GetBoards.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.BoardController.BoardController.GetBoards.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all boards</p>
+<p>Handles ‘get’ requests on route board/get_all</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>get(‘<a class="reference external" href="http://localhost:5000/board/get_all">http://localhost:5000/board/get_all</a>’)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Json response with all boards(id: board)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Controllers.TaskController">
+<span id="taskcontroller"></span><h2>TaskController<a class="headerlink" href="#module-Controllers.TaskController" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="Controllers.TaskController.TaskController">
+<em class="property">class </em><code class="sig-prename descclassname">Controllers.TaskController.</code><code class="sig-name descname">TaskController</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">api</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.TaskController.TaskController" title="Permalink to this definition">¶</a></dt>
+<dd><p>Task Controller class.</p>
+<p>Defines api for tasks.</p>
+<dl class="py class">
+<dt id="Controllers.TaskController.TaskController.AddTask">
+<em class="property">class </em><code class="sig-name descname">AddTask</code><a class="headerlink" href="#Controllers.TaskController.TaskController.AddTask" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.TaskController.TaskController.AddTask.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">board_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.TaskController.TaskController.AddTask.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds new task to specific board(by board id)</p>
+<dl class="simple">
+<dt>Handles ‘put’ requests on route /task/add/&lt;board_id&gt; with parameters:</dt><dd><ul class="simple">
+<li><p>‘name’</p></li>
+<li><p>‘description’</p></li>
+<li><p>‘completed’</p></li>
+</ul>
+</dd>
+</dl>
+<p>in request data</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>put(‘<a class="reference external" href="http://localhost:5000/task/add/5">http://localhost:5000/task/add/5</a>’, data={‘name’: ‘Task 1’,</dt><dd><p>‘description’: “Create TaskTracker api”,’completed’: False})</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>board_id</strong> – Id of board for task to be added.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Id of created task.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.TaskController.TaskController.DeleteTask">
+<em class="property">class </em><code class="sig-name descname">DeleteTask</code><a class="headerlink" href="#Controllers.TaskController.TaskController.DeleteTask" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.TaskController.TaskController.DeleteTask.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.TaskController.TaskController.DeleteTask.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes task(by task id)</p>
+<p>Handles ‘put’ requests on route /task/delete/&lt;id&gt;</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>put(‘<a class="reference external" href="http://localhost:5000/task/delete/2">http://localhost:5000/task/delete/2</a>’)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Id of task to be deleted.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Success(even if task doesn’t exist)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.TaskController.TaskController.EditTask">
+<em class="property">class </em><code class="sig-name descname">EditTask</code><a class="headerlink" href="#Controllers.TaskController.TaskController.EditTask" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.TaskController.TaskController.EditTask.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.TaskController.TaskController.EditTask.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edits task(by task id)</p>
+<dl class="simple">
+<dt>Handles ‘put’ requests on route /task/edit/&lt;id&gt; with OPTIONAL parameters:</dt><dd><ul class="simple">
+<li><p>‘name’</p></li>
+<li><p>‘description’</p></li>
+<li><p>‘completed’</p></li>
+</ul>
+</dd>
+</dl>
+<p>in request data</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>put(‘<a class="reference external" href="http://localhost:5000/task/edit/2">http://localhost:5000/task/edit/2</a>’,</dt><dd><p>data={‘name’: ‘Edited name’, ‘completed’: True})</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>board_id</strong> – Id of board for task to be edited.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Success or error if id is wrong</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.TaskController.TaskController.GetTask">
+<em class="property">class </em><code class="sig-name descname">GetTask</code><a class="headerlink" href="#Controllers.TaskController.TaskController.GetTask" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.TaskController.TaskController.GetTask.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.TaskController.TaskController.GetTask.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets task(by task id)</p>
+<p>Handles ‘get’ requests on route /task/get/&lt;id&gt;</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>get(‘<a class="reference external" href="http://localhost:5000/task/get/2">http://localhost:5000/task/get/2</a>’)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Id of task to be got.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Json response with task(id: task) or error response if id is wrong.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Controllers.TaskController.TaskController.GetTasks">
+<em class="property">class </em><code class="sig-name descname">GetTasks</code><a class="headerlink" href="#Controllers.TaskController.TaskController.GetTasks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Controllers.TaskController.TaskController.GetTasks.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">board_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Controllers.TaskController.TaskController.GetTasks.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets all tasks from specific board(by board id)</p>
+<p>Handles ‘get’ requests on route /task/get_all/&lt;board_id&gt;</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p>get(‘<a class="reference external" href="http://localhost:5000/task/get_all/1">http://localhost:5000/task/get_all/1</a>’)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>board_id</strong> – Id of board for tasks to be got.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Json response with tasks(id: task).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="dao">
+<h1>DAO<a class="headerlink" href="#dao" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-DAO.BaseDAO">
+<span id="basedao"></span><h2>BaseDAO<a class="headerlink" href="#module-DAO.BaseDAO" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="DAO.BaseDAO.BaseDAO">
+<em class="property">class </em><code class="sig-prename descclassname">DAO.BaseDAO.</code><code class="sig-name descname">BaseDAO</code><a class="headerlink" href="#DAO.BaseDAO.BaseDAO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Basic Data Object class.</p>
+<p>Does database connection and disconnection.</p>
+<dl class="py method">
+<dt id="DAO.BaseDAO.BaseDAO.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BaseDAO.BaseDAO.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes connection to database</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.BaseDAO.BaseDAO.open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BaseDAO.BaseDAO.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connecnts to database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Database cursor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-DAO.BoardDAO">
+<span id="boarddao"></span><h2>BoardDAO<a class="headerlink" href="#module-DAO.BoardDAO" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="DAO.BoardDAO.BoardDAO">
+<em class="property">class </em><code class="sig-prename descclassname">DAO.BoardDAO.</code><code class="sig-name descname">BoardDAO</code><a class="headerlink" href="#DAO.BoardDAO.BoardDAO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Board Data Access Object class.</p>
+<p>Creates interface for db actions with boards</p>
+<dl class="py method">
+<dt id="DAO.BoardDAO.BoardDAO.AddBoard">
+<em class="property">static </em><code class="sig-name descname">AddBoard</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">board</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BoardDAO.BoardDAO.AddBoard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds board to DB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>board</strong> – Board object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Id of created board.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.BoardDAO.BoardDAO.DeleteBoard">
+<em class="property">static </em><code class="sig-name descname">DeleteBoard</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BoardDAO.BoardDAO.DeleteBoard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes specific board from DB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Id of board to be deleted.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.BoardDAO.BoardDAO.EditBoardName">
+<em class="property">static </em><code class="sig-name descname">EditBoardName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'Name'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BoardDAO.BoardDAO.EditBoardName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change name of specific board(by id) in DB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – Id of board to be changed.</p></li>
+<li><p><strong>name</strong> – New name of board</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.BoardDAO.BoardDAO.GetBoard">
+<em class="property">static </em><code class="sig-name descname">GetBoard</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BoardDAO.BoardDAO.GetBoard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets specific board from DB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Id of board to be got.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sql resonse with board</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.BoardDAO.BoardDAO.GetBoards">
+<em class="property">static </em><code class="sig-name descname">GetBoards</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DAO.BoardDAO.BoardDAO.GetBoards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets all boards from DB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List with sql response with boards ordered by id ascending</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-DAO.TaskDAO">
+<span id="taskdao"></span><h2>TaskDAO<a class="headerlink" href="#module-DAO.TaskDAO" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="DAO.TaskDAO.TaskDAO">
+<em class="property">class </em><code class="sig-prename descclassname">DAO.TaskDAO.</code><code class="sig-name descname">TaskDAO</code><a class="headerlink" href="#DAO.TaskDAO.TaskDAO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Task Data Access Object class.</p>
+<p>Creates interface for db actions with tasks</p>
+<dl class="py method">
+<dt id="DAO.TaskDAO.TaskDAO.AddTask">
+<em class="property">static </em><code class="sig-name descname">AddTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task</span></em>, <em class="sig-param"><span class="n">board_id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.TaskDAO.TaskDAO.AddTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds task to DB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>board_id</strong> – Board id to which the task belongs</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Id of created task.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.TaskDAO.TaskDAO.DeleteTask">
+<em class="property">static </em><code class="sig-name descname">DeleteTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.TaskDAO.TaskDAO.DeleteTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes task from DB by id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Task id</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.TaskDAO.TaskDAO.EditTask">
+<em class="property">static </em><code class="sig-name descname">EditTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task</span></em>, <em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.TaskDAO.TaskDAO.EditTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change specific task from DB by id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>task</strong> – Task object</p></li>
+<li><p><strong>id</strong> – Task id</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.TaskDAO.TaskDAO.GetTask">
+<em class="property">static </em><code class="sig-name descname">GetTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.TaskDAO.TaskDAO.GetTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get specific task from DB by id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – Task id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sql response with task</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="DAO.TaskDAO.TaskDAO.GetTasks">
+<em class="property">static </em><code class="sig-name descname">GetTasks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">board_id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#DAO.TaskDAO.TaskDAO.GetTasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get tasks from DB by board id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>board_id</strong> – Board id to which the tasks belongs</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List with sql responses with tasks.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Task Tracker’s documentation!</a></li>
+<li><a class="reference internal" href="#models">Models</a><ul>
+<li><a class="reference internal" href="#module-Models.Board">Board</a></li>
+<li><a class="reference internal" href="#module-Models.Task">Task</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#controllers">Controllers</a><ul>
+<li><a class="reference internal" href="#module-Controllers.BoardController">BoardController</a></li>
+<li><a class="reference internal" href="#module-Controllers.TaskController">TaskController</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dao">DAO</a><ul>
+<li><a class="reference internal" href="#module-DAO.BaseDAO">BaseDAO</a></li>
+<li><a class="reference internal" href="#module-DAO.BoardDAO">BoardDAO</a></li>
+<li><a class="reference internal" href="#module-DAO.TaskDAO">TaskDAO</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Artemuk Oleksandr.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
